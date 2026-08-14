@@ -1,0 +1,108 @@
+---
+title: "Exploration C - Practice"
+format: pdf
+editor: visual
+---
+
+```{r}
+knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 70), tidy = TRUE)
+```
+
+## Your turn!
+
+Try out the following problems, and then follow the instructions at the end to render and submit the document.
+
+1\. Use the function `data.frame()` to create a data frame object using the following sets of data for each column (3 rows, 4 columns). The column names (in order) should be: age, height, gender, and smoker.
+
+-   `22`, `25`, `28`
+
+-   `66`, `71`, `64`
+
+-   `"F"`, `"M"`, `"F"`
+
+-   `FALSE`, `TRUE`, `TRUE`
+
+In addition, you should give this data frame the variable name `people` so that it can be used in later problems*. Make sure to also display the data frame.*
+
+```{r}
+
+```
+
+2\. Demonstrate how to access various elements from the data frame `people`. You should demonstrate the following.
+
+-   Access a single row.
+
+-   Access a single column using the `$` operator.
+
+-   Access a single entry in the data frame (you will need to specify a precise row and column).
+
+-   Access two rows at once (if you can't remember how to do this, take a look at the examples in the notes).
+
+```{r}
+```
+
+3\. Add a row to the `people` data frame you created. Then add a column to the data frame `people`. (Note that your `people` data frame should now have 4 rows and 5 columns). *Display the resulting data frame.*
+
+```{r}
+
+```
+
+4\. Add row names to the data frame `people`. *Display the resulting data frame.*
+
+```{r}
+
+```
+
+5\. Now let's practice importing a data set. If you have not already, download the `penguins.csv` from the Exploration C assignment on Canvas. Then use the method outlined in the Exploration C notes to import this data set. You will use this data set for the remaining problems. *Note that when importing from a csv file, you do not need to use the `data.frame()` function.*
+
+You may want to look at the penguins data set after you have imported it so you can see what type of data is contained in this data set. You can do this by clicking on its name in the Environment pane. *Do **not** display the whole data frame in the code block below.*
+
+```{r}
+
+```
+
+6\. Use the `table()` function to display the number of each species of penguin included in the penguins data set. (*Hint:* which column should you apply the `table()` function to?)
+
+```{r}
+
+```
+
+7\. Use the `subset()` function to isolate the rows of the penguins data set that contain only the penguins on the `Dream` island. *Additionally, display the only first 6 rows of this new data frame (what function will do this for you?).*
+
+```{r}
+
+```
+
+8\. Use the `subset()` function to isolate the rows of the penguins data set that contain only the `male` penguins of the species `Adelie`. (*Hint:* what relational operator can be used to ensure that both the first *and* the second condition are met? If you can't remember, go back and review the logical operators discussed in Exploration A).
+
+*You should also display the only the last 6 rows of this new data frame (what function will do this for you?).*
+
+```{r}
+
+```
+
+9\. In problem 10, you will compute the mean of the body mass of the penguins in the data frame. However, some of the rows in the penguins data set include `NA` values for the body mass which will cause issues when you try to compute the mean.
+
+To avoid this issue, remove any rows from the penguins data frame that contain an `NA` value in the `body_mass_g` column and save this new data frame using the variable name `peng_noNABodyMass`. *Display the first 10 rows of this new data frame.*
+
+```{r}
+
+```
+
+10\. Compute the mean of the `body_mass_g` column using the `peng_noNABodyMass` data frame you created in the previous problem. *Make sure to display the mean that you compute.*
+
+```{r}
+
+```
+
+**Rendering Instructions**
+
+a.  Make sure that your file does not have any errors in it, and that it is self-contained! If it contains errors or is not self-contained, the document will not render.
+
+b.  Towards the top left of the RStudio window, you will see a blue arrow and the word "**Render**". Click this. You will see a lot of text show up in the **Background Jobs** pane below. Wait until this text stops.
+
+c.  Once the rendering is complete, you will see a new pdf file in the **"Files"** pane in the lower right pane of RStudio.
+
+d.  Locate the document you want to download and click the check box next to the file name, then select the "**More**" option from the top of the "**Files**"pane (blue gear icon), and then select "**Export**" and then "**Download**".
+
+e.  The file should be downloaded to your downloads folder. You should now be able to go into **Canvas** and upload the pdf and submit it.
