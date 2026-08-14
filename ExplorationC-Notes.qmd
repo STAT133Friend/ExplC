@@ -86,11 +86,11 @@ simpsons
 
 Data frames are two-dimensional, (as opposed to vectors/factors which are one-dimensional). So rather than using the `length()` function to determine the number of elements like we used for vectors/factors, there are three functions we can use, depending on what dimension you want to know about.
 
--   The function `dim()` will give you a vector containing both the number of rows and the number of columns in the data frame (with the number of rows displayed first).
+- The function `dim()` will give you a vector containing both the number of rows and the number of columns in the data frame (with the number of rows displayed first).
 
--   The function `nrow()` will give you only the number of rows.
+- The function `nrow()` will give you only the number of rows.
 
--   The function `ncol()` will give you the only number of columns.
+- The function `ncol()` will give you the only number of columns.
 
 ```{r}
 dim(simpsons)
@@ -104,9 +104,9 @@ ncol(simpsons)
 
 Often times we will have a data frame with many rows and columns, but will want access to a smaller subsets of the data frame (e.g. certain rows only, or certain columns only). With vectors/factors we used brackets `[]` to access certain elements. With data frames, there are two options.
 
--   If you want to access a single column of a data frame, you can use the `$` operator. The format for using this operator is as follows: `df$colName`, where `df` would be the name of the data frame and `colName` would be the name of the column that you are trying to access. Notice that there are *no quotes needed for the column name in this format*.
+- If you want to access a single column of a data frame, you can use the `$` operator. The format for using this operator is as follows: `df$colName`, where `df` would be the name of the data frame and `colName` would be the name of the column that you are trying to access. Notice that there are *no quotes needed for the column name in this format*.
 
--   To access either rows or columns or some combination of the two, you will need to use brackets with a comma `[,]`. The format for using this operator is as follows: `df[row, column]`, where `df` is the name of the data frame, and `row` and `column` can be an method of indexing (e.g. numbers or names). Note that if you use names in this method, *quotes are necessary around the name*. Additionally note that if you only want to access a whole row or a whole column, you can omit either of the inputs: `df[row,]` gives whole rows and `df[,column]` gives whole columns.
+- To access either rows or columns or some combination of the two, you will need to use brackets with a comma `[,]`. The format for using this operator is as follows: `df[row, column]`, where `df` is the name of the data frame, and `row` and `column` can be an method of indexing (e.g. numbers or names). Note that if you use names in this method, *quotes are necessary around the name*. Additionally note that if you only want to access a whole row or a whole column, you can omit either of the inputs: `df[row,]` gives whole rows and `df[,column]` gives whole columns.
 
 Below are some examples of ways to access rows and columns from a data frame in various combinations. **Note:** if you read these notes in RStudio, you may notice that some of the methods of accessing elements give you a data frame while some of the methods give you vectors instead.
 
@@ -149,9 +149,9 @@ The `subset()` function is an alternative method to access data and is especiall
 
 The subset function requires two inputs (separated by commas):
 
--   The first input should be the name of the data frame that you are pulling the data from.
+- The first input should be the name of the data frame that you are pulling the data from.
 
--   The second input should be some logical expression, perhaps using both logical and relational operators, that describes the values that you want to isolate from the data frame. Note that this function has the special feature that you don't need to specify the name of the data frame first (i.e. instead of `subset(simpsons, simpsons$Age > 10)` you can do `subset(simpsons, Age > 10)`).
+- The second input should be some logical expression, perhaps using both logical and relational operators, that describes the values that you want to isolate from the data frame. Note that this function has the special feature that you don't need to specify the name of the data frame first (i.e. instead of `subset(simpsons, simpsons$Age > 10)` you can do `subset(simpsons, Age > 10)`).
 
 The output of this function will be a new data frame satisfying the conditions that you specify.
 
