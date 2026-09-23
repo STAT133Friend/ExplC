@@ -53,7 +53,7 @@ In addition, you should give this data frame the variable name `people` so that 
 
 ```
 
-5\. Now let's practice importing a data set. If you have not already, download the `penguins.csv` from the Exploration C assignment on Canvas. Then use the method outlined in the Exploration C notes to import this data set. You will use this data set for the remaining problems. *Note that when importing from a csv file, you do not need to use the `data.frame()` function.*
+5\. Now let's practice importing a data set. You should see `penguins.csv` in the "Files" pane of Posit Cloud. Use the method outlined in the Exploration C notes to import this data set. You will use this data set for the remaining problems. *Note that when importing from a csv file, you do not need to use the `data.frame()` function.*
 
 You may want to look at the penguins data set after you have imported it so you can see what type of data is contained in this data set. You can do this by clicking on its name in the Environment pane. *Do **not** display the whole data frame in the code block below.*
 
