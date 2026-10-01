@@ -53,27 +53,27 @@ In addition, you should give this data frame the variable name `people` so that 
 
 ```
 
-5\. Now let's practice importing a data set. You should see `penguins.csv` in the "Files" pane of Posit Cloud. Use the method outlined in the Exploration C notes to import this data set. You will use this data set for the remaining problems. *Note that when importing from a csv file, you do not need to use the `data.frame()` function.*
+5\. Now let's practice importing a data set. You should see `penguins.csv` in the "Files" pane of Posit Cloud. Use the method outlined in the Exploration C notes to import this data set and **save it a variable called `peng`.** You will use this data set for the remaining problems. *Note that when importing from a csv file, you do not need to use the `data.frame()` function.*
 
-You may want to look at the penguins data set after you have imported it so you can see what type of data is contained in this data set. You can do this by clicking on its name in the Environment pane. *Do **not** display the whole data frame in the code block below.*
-
-```{r}
-
-```
-
-6\. Use the `table()` function to display the number of each species of penguin included in the penguins data set. (*Hint:* which column should you apply the `table()` function to?)
+You may want to look at `peng` after you have imported it so you can see what type of data is contained in this data set. You can do this by clicking on its name in the Environment pane. *Do **not** display the whole data frame in the code block below.*
 
 ```{r}
 
 ```
 
-7\. Use the `subset()` function to isolate the rows of the penguins data set that contain only the penguins on the `Dream` island. *Additionally, display the only first 6 rows of this new data frame (what function will do this for you?).*
+6\. Use the `table()` function to display the number of each species of penguin included in `peng`. (*Hint:* which column should you apply the `table()` function to?)
 
 ```{r}
 
 ```
 
-8\. Use the `subset()` function to isolate the rows of the penguins data set that contain only the `male` penguins of the species `Adelie`. (*Hint:* what relational operator can be used to ensure that both the first *and* the second condition are met? If you can't remember, go back and review the logical operators discussed in Exploration A).
+7\. Use the `subset()` function to isolate the rows of `peng` that contain only the penguins on the `Dream` island. *Additionally, display the only first 6 rows of this new data frame (what function will do this for you?).*
+
+```{r}
+
+```
+
+8\. Use the `subset()` function to isolate the rows of `peng` that contain only the `male` penguins of the species `Adelie`. (*Hint:* what relational operator can be used to ensure that both the first *and* the second condition are met? If you can't remember, go back and review the logical operators discussed in Exploration A).
 
 *You should also display the only the last 6 rows of this new data frame (what function will do this for you?).*
 
@@ -81,9 +81,9 @@ You may want to look at the penguins data set after you have imported it so you 
 
 ```
 
-9\. In problem 10, you will compute the mean of the body mass of the penguins in the data frame. However, some of the rows in the penguins data set include `NA` values for the body mass which will cause issues when you try to compute the mean.
+9\. In problem 10, you will compute the mean of the body mass of the penguins in the data frame. However, some of the rows in `peng` include `NA` values for the body mass which will cause issues when you try to compute the mean.
 
-To avoid this issue, remove any rows from the penguins data frame that contain an `NA` value in the `body_mass_g` column and save this new data frame using the variable name `peng_noNABodyMass`. *Display the first 10 rows of this new data frame.*
+To avoid this issue, remove any rows from `peng` that contain an `NA` value in the `body_mass_g` column and save this new data frame using the variable name `peng_noNABodyMass`. *Display the first 10 rows of this new data frame.*
 
 ```{r}
 
